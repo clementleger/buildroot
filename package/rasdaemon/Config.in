@@ -1,0 +1,10 @@
+config BR2_PACKAGE_RASDAEMON
+	bool "rasdaemon"
+	select BR2_PACKAGE_LIBTRACEEVENT
+	select BR2_PACKAGE_SQLITE
+	help
+	  Those tools provide a way to get Platform Reliability, Availability
+	  and Serviceability (RAS) reports made via the Kernel tracing events.
+
+	  https://github.com/mchehab/rasdaemon
+
